@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Cricket Batting Statitics</title>
+  <style>
+
+    h1{
+      font-family: Arial;
+      color:#137718;
+      margin-left:400px;
+      font-size:40px;
+    
+    }
+  </style>
+</head>
+<body ><br><br>
+ <h1 >Board of Control for Cricket in India(BCCI)</h1>
+ <canvas width="380" height="380" id="cid" style="border:3px solid black;margin-left:510px;padding:25px 25px 25px 25px";></canvas>
+ <script>
+  var c = document.getElementById("cid");
+  var ctx = c.getContext("2d");
+  ctx.strokeStyle = "red";
+  ctx.moveTo(35,35);
+  ctx.lineTo(35,330);
+  ctx.lineTo(330,330);
+  ctx.stroke();
+ 
+  ctx.strokeText("5",85,350);
+  ctx.strokeText("10",135,350);
+  ctx.strokeText("15",185,350);
+  ctx.strokeText("20",235,350);
+  ctx.strokeText("25",285,350);
+  ctx.strokeText("Overs",335,340);
+
+  ctx.strokeText("30",15,285);
+  ctx.strokeText("60",15,235);
+  ctx.strokeText("90",15,185);
+  ctx.strokeText("120",15,135);
+  ctx.strokeText("150",15,85);
+  ctx.strokeText("Runs",15,30);
+
+  ctx.beginPath();  
+    ctx.moveTo(36,95);
+      ctx.lineTo(330,95);
+     ctx.stroke();
+
+  ctx.moveTo(36,205);
+      ctx.lineTo(330,205);
+     ctx.stroke();
+
+  ctx.moveTo(36,265);
+      ctx.lineTo(330,265);    
+     ctx.stroke();
+
+  ctx.beginPath();
+  ctx.strokeStyle="blue";
+  ctx.strokeText("40",15,268);
+  ctx.stroke();
+
+  ctx.strokeStyle="blue";
+  ctx.strokeText("75",15,208);
+  ctx.stroke();
+
+  ctx.strokeStyle="blue";
+  ctx.strokeText("140",15,98);
+  ctx.stroke();
+
+  ctx.arc(90,265,4,0,2*Math.PI);
+  ctx.fillStyle="navy";
+      ctx.fill();
+     ctx.stroke();
+
+  ctx.beginPath();
+      ctx.arc(135,205,4,0,2*Math.PI);
+             ctx.fillStyle="navy";
+     ctx.fill();
+    ctx.stroke();
+
+  ctx.beginPath();
+      ctx.arc(192,95,4,0,2*Math.PI);
+             ctx.fillStyle="navy";
+     ctx.fill();
+    ctx.stroke();
+
+  ctx.moveTo(90,265);
+  ctx.lineTo(135,205);
+         ctx.stroke();
+
+                        ctx.moveTo(135,205);
+  ctx.lineTo(192,95);
+         ctx.stroke();
+   
+ </script>
+
+</body>
+</html>
